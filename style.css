@@ -1,0 +1,254 @@
+body{
+    background-color: rgb(192, 229, 247);
+}
+
+/*Navbar Section*/
+
+.container-navbar{
+    background-color: #ffffff;
+}
+.logo{
+    height: 60px;
+    width: 100px;
+    margin: 10px;
+}
+.list-elements{
+    float: right;
+    list-style: none;
+}
+.list-elements li{
+    float: left;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 30px;
+}
+.list-elements a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Home Section*/
+
+.container-home{
+    background-color: aliceblue;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container-content{
+    font-size: 50px;
+}
+
+/*About Section*/
+
+.container-about{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+.about-content{
+    margin-right: 50px;
+}
+h2{
+    font-size: 50px;
+}
+.about-content > p{
+    font-size: 25px;
+}
+.about-image > img{
+    border-radius: 50%;
+    height: 400px;
+    margin: 20px;
+}
+
+/*Projects Section*/
+
+.container-projects{
+    background-color: aliceblue;
+    margin: 50px;
+    /* margin-bottom: 50px; */
+}
+.projects-title{
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.projects{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+.projects img{
+    width: 300px;
+    height: 250px;
+}
+.projects > a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+/*Contacts Section*/
+
+.container-contact{
+    background-color: aliceblue;
+    margin: 50px;
+    padding: 20px;
+}
+.contact-title{
+    margin-left: 70px;
+}
+.contact-content > p{
+    font-size: 25px;
+    margin-left: 70px;  
+}
+
+/*Resume Section*/
+
+.container-resume{
+    background-color: aliceblue;
+    margin: 50px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.resume-title{
+    margin-left: 70px;
+}
+.resume-content button{
+    font-size: 22px;
+    margin-left: 70px;  
+    background-color: rgb(253, 75, 75);
+    color: rgb(248, 253, 177);
+    border: 0;
+    border-radius: 10px;
+    line-height: 2;
+    width: 100px;
+    cursor: pointer;
+}
+
+/*Footer Section*/
+
+.container-footer{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 20px;
+    height: 300px;
+}
+.footer-icons a{
+    padding: 2.5px;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 650px){
+    .logo{
+        height: 30px;
+        width: 50px;
+    }
+    .list-elements li{
+        font-size: 20px;
+        padding: 7.5px;
+        margin: 0;
+    }
+    .container-content{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .container-about{
+        flex-direction: column-reverse;
+    }
+    .about-content > p{
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .about-image > img{
+        height: 300px;
+    }
+    .projects-title{
+        margin: 0;
+    }
+    .projects{
+        grid-template-columns: 100%;
+    }
+    .contact-title{
+        margin: 0;
+    }
+    .contact-content > p{
+        font-size: 18px;
+        margin: 0;
+        padding-left: 20px;
+    }
+    .resume-title{
+        margin: 0;
+    }
+    .resume-content{
+        padding-left: 20px;
+    }
+    .resume-content button{
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1200px){
+    .logo{
+        height: 30px;
+        width: 50px;
+    }
+    .list-elements li{
+        font-size: 25px;
+        padding: 10px;
+        margin: 0;
+    }
+    .container-content{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .about-content > p{
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .about-image > img{
+        height: 300px;
+    }
+    .projects-title{
+        margin: 0;
+    }
+    .projects{
+        grid-template-columns: 50% 50%;
+    }
+    .contact-title{
+        margin: 0;
+    }
+    .contact-content > p{
+        font-size: 18px;
+        margin: 0;
+        padding-left: 20px;
+    }
+    .resume-title{
+        margin: 0;
+    }
+    .resume-content{
+        padding-left: 20px;
+    }
+    .resume-content button{
+        margin: 0;
+        font-size: 18px;
+    }
+}
